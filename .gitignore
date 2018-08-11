@@ -1,0 +1,11 @@
+.DS_Store
+trec06c/
+kmeansdemo/
+
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
