@@ -2,6 +2,7 @@
 trec06c/
 kmeansdemo/
 
+*.eml
 *.py[cod]
 *.so
 *.egg

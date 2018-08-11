@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="833985d5-0678-4735-9ec6-11d21471c57d" name="Default" comment="" />
+    <list default="true" id="833985d5-0678-4735-9ec6-11d21471c57d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/FileMerage.py" beforeDir="false" afterPath="$PROJECT_DIR$/etl/FileMerage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getQQEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlprs/getQQEmail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getawebsite.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mathfxy.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/mathfxy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/print1.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/print1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randommima.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/randommima.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retest.py" beforeDir="false" afterPath="$PROJECT_DIR$/etl/retest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svdcf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/test.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +56,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -57,7 +66,17 @@
             <path>
               <item name="PythonLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="kmeansdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="etl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="htmlprs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonLearning" type="b2602c69:ProjectViewProjectNode" />
@@ -67,6 +86,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -92,25 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.skillcloud (1)">
-    <configuration name="getQQEmail" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonLearning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getQQEmail.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.test">
     <configuration name="kmeans" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,7 +131,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="mathfxy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="randommima" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,7 +143,25 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mathfxy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo/randommima.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="retest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/etl/retest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,7 +215,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,19 +223,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.mathfxy" />
-      <item itemvalue="Python.getQQEmail" />
       <item itemvalue="Python.kmeans" />
       <item itemvalue="Python.skillcloud" />
       <item itemvalue="Python.skillcloud (1)" />
+      <item itemvalue="Python.randommima" />
+      <item itemvalue="Python.retest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.retest" />
+        <item itemvalue="Python.randommima" />
         <item itemvalue="Python.skillcloud (1)" />
         <item itemvalue="Python.skillcloud" />
         <item itemvalue="Python.kmeans" />
-        <item itemvalue="Python.getQQEmail" />
-        <item itemvalue="Python.mathfxy" />
       </list>
     </recent_temporary>
   </component>
@@ -273,15 +293,15 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.18743344" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.18903089" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49946752" weight="0.32954547" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5042598" side_tool="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50479233" side_tool="true" weight="0.32954547" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49840257" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4974359" weight="0.32954547" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49574015" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4974359" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49520767" weight="0.32954547" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.4978701" weight="0.32954547" />
       <window_info anchor="right" id="Structure" order="3" sideWeight="0.5008881" side_tool="true" weight="0.25128207" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49520767" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49520767" weight="0.32954547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="1" sideWeight="0.5008881" side_tool="true" weight="0.25180376" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -294,21 +314,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.25567767" />
       <window_info active="true" anchor="right" id="Structure" order="3" sideWeight="0.5008881" visible="true" weight="0.25128207" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297619" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49963742" weight="0.3297619" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4974359" visible="true" weight="0.3297619" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297619" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49963742" weight="0.3297619" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4981685" weight="0.3297619" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50256413" side_tool="true" visible="true" weight="0.3297619" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49963742" weight="0.3297619" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="1" sideWeight="0.5008881" side_tool="true" weight="0.25180376" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297619" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49963742" weight="0.3297619" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -363,7 +383,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/demo/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
@@ -445,31 +465,10 @@
     <entry file="file://$PROJECT_DIR$/demo/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileMerage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getQQEmail.py">
+    <entry file="file://$PROJECT_DIR$/htmlprs/getQQEmail.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mathfxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
@@ -532,6 +531,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kmeansdemo/alldataset.dat">
       <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etl/FileMerage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getawebsite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svdcf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etl/retest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/randommima.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#25#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/mathfxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
