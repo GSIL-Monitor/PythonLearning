@@ -1,8 +1,11 @@
+#Mac
 .DS_Store
 trec06c/
 kmeansdemo/
 
-*.eml
+.idea
+
+# Python:
 *.py[cod]
 *.so
 *.egg
@@ -10,3 +13,7 @@ kmeansdemo/
 dist
 build
 
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini

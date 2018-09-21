@@ -1,0 +1,12 @@
+2018-08-24 10:32:52,409 INFO    : this is information
+2018-08-24 10:32:52,409 WARNING : this is warning message
+2018-08-24 10:32:52,409 ERROR   : this is error message
+2018-08-24 10:32:52,409 CRITICAL: this is fatal message, it is same as logger.critical
+2018-08-24 10:52:27,854 INFO    : this is information
+2018-08-24 10:52:27,855 WARNING : this is warning message
+2018-08-24 10:52:27,855 ERROR   : this is error message
+2018-08-24 10:52:27,855 CRITICAL: this is fatal message, it is same as logger.critical
+2018-08-24 10:52:49,549 INFO    : this is information
+2018-08-24 10:52:49,549 WARNING : this is warning message
+2018-08-24 10:52:49,550 ERROR   : this is error message
+2018-08-24 10:52:49,550 CRITICAL: this is fatal message, it is same as logger.critical
