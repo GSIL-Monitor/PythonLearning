@@ -78,7 +78,7 @@ union all
 group by channel_id, flow_type, project_id, campaign_id, creative_id,hour_id;
 
     " """
-    print hive_sql
+    print(hive_sql)
     return command(hive_sql)
 
 # %Y%m%d %Y-%m-%d %Y%m 
@@ -87,7 +87,7 @@ def getDateFormat(formatStr, day):
 
 def mailto(date,pwd, jobname, maillist, msg):
     cmd = """ echo "nohup """ + pwd + sys.argv[0]+ date +""" &\n """ + msg +""" " | mail -s "Job --""" + jobname + """-- fail" """ + maillist
-    print cmd
+    print(cmd)
     command(cmd);
     
 if __name__ == '__main__':
@@ -107,10 +107,11 @@ if __name__ == '__main__':
 
     r=data_insert(date)
     alltime=time.time()-begin
-    print "LogTime ",time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time())), ": Finish ",sys.argv[0]," Job Cost time:" ,round(alltime/60,0),'m',round(alltime%60,0),'s'
+    print("LogTime ", time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time())), ": Finish ", sys.argv[0],
+          " Job Cost time:", round(alltime / 60, 0), 'm', round(alltime % 60, 0), 's')
     if r!= 0:
         msg = jobname + ' . data_insert tried 3 times all failed'
-        print msg
+        print(msg)
         mailto(date, pwd, jobname, to, msg)
         sys.exit(1)
 
