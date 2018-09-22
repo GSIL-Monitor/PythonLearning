@@ -73,16 +73,17 @@ if __name__ == '__main__':
     if len(sys.argv) == 2:
         ddl_file = sys.argv[1]
         sql_list = open(ddl_file).read()
-        ddlct = len(sql_list.strip().split(';')[:-1])
+        sql_list = sql_list.strip().split(';')[:-1]
+        ddlct = len(sql_list)
         if ddlct == 1:
             print('{file} has one ddl.'.format(file=ddl_file))
         else:
             print('{file} has {num} ddls.'.format(num=ddlct, file=ddl_file))
 
-        for sql in sql_list.split(';')[:-1]:
+        for sql in sql_list:
             ddl_transform(sql.strip('\n'))
             print('\n')
     else:
-        print('需求输入ddl的文件路径.每个建表语句以;结束,支持有多个建表语句.')
+        print('需输入ddl文件,且每个建表语句以;结束,支持有多个建表语句.')
         exit(1)
     pass
