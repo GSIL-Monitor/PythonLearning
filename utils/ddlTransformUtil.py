@@ -28,7 +28,7 @@ def ddl_transform(sql):
                 col_comm = col_comm[0]
             else:
                 col_comm = None
-            col = '    {col_name} {col_type} COMMENT \'{col_comm}\',\n'.format(
+            col = '    {col_name:<15} {col_type} COMMENT \'{col_comm}\',\n'.format(
                 col_name=col_name,
                 col_type=col_type,
                 col_comm=col_comm)
