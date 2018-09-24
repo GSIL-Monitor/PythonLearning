@@ -1,8 +1,8 @@
 def odpsInit(project='babyfs_data'):
     from odps import ODPS
 
-    o = ODPS('LTAIGcHUtiuARZin',
-             'pxx57vjysvBurt76Jhd93X9goMMGdc',
+    o = ODPS('<accid>',
+             '<acckey>',
              project,
              endpoint='http://service.odps.aliyun.com/api')
     return o
