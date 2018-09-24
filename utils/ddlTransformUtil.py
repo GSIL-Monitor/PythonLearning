@@ -18,7 +18,8 @@ def ddl_transform(sql):
             else:
                 col_name = None
 
-            if i.find('int') >= 0:
+            is_not_id_value = i.find('int') >= 0 and i.find('id') < 0
+            if is_not_id_value:
                 col_type = 'BIGINT'
             else:
                 col_type = 'STRING'

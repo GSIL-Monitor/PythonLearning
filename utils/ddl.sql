@@ -1,3 +1,4 @@
+
 CREATE TABLE `t_account` (
   `id` bigint(20) NOT NULL,
   `user_id` bigint(20) NOT NULL COMMENT '用户id',
