@@ -5,6 +5,8 @@ kmeansdemo/
 
 .idea
 
+odpsInit.py
+
 # Python:
 *.py[cod]
 *.so
