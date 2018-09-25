@@ -35,7 +35,7 @@ def ddl_transform(sql):
                 col_comm=col_comm)
             out_ddl = out_ddl + col
         elif i.find('engine') >= 0:
-            table_comment = re.findall('comment=\'(.+)\'\W*', i)
+            table_comment = re.findall('comment\W\'(.+)\'\W*', i)
 
             if len(table_comment) > 0:
                 table_comment = table_comment[0]
