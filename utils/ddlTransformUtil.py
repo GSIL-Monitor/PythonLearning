@@ -53,24 +53,6 @@ def ddl_transform(sql):
 
 
 if __name__ == '__main__':
-    sql = '''
-    CREATE TABLE `t_account` (
-      `id` bigint(20) NOT NULL,
-      `user_id` bigint(20) NOT NULL COMMENT '用户id',
-      `name` varchar(128) NOT NULL COMMENT '帐户名',
-      `type` int(11) NOT NULL DEFAULT '0' COMMENT '帐户类型',
-      `salt` varchar(50) DEFAULT NULL COMMENT 'slat',
-      `password` varchar(50) DEFAULT NULL COMMENT '密码',
-      `stat` tinyint(4) DEFAULT '0' COMMENT '状态',
-      `ct` bigint(20) NOT NULL DEFAULT '0' COMMENT '创建时间',
-      `ut` bigint(20) NOT NULL DEFAULT '0' COMMENT '更新时间',
-      `ver` bigint(20) NOT NULL DEFAULT '0' COMMENT '版本号',
-      `del` tinyint(4) NOT NULL DEFAULT '0' COMMENT '删除标志',
-      PRIMARY KEY (`id`),
-      UNIQUE KEY `name_UNIQUE` (`name`),
-      UNIQUE KEY `user_id_type_UNIQUE` (`user_id`,`type`)
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='帐户表'
-    '''
     if len(sys.argv) == 2:
         ddl_file = sys.argv[1]
         sql_list = open(ddl_file).read()
