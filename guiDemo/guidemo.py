@@ -1,7 +1,9 @@
 # coding: utf-8
 
 import tkinter as tk
-from tkinter import filedialog, ttk
+from tkinter import filedialog
+from guiDemo.loadexcel2odps import uploadexcel
+from guiDemo.loadintoexcel import load2excel
 
 GUI = tk.Tk()  # 创建父容器GUI
 GUI.title("Serial Tool")  # 父容器标题
@@ -51,24 +53,24 @@ btn2.pack(side='left')
 print(output_file)
 
 
-def go(*args):  # 处理事件，*args表示可变参数
-    global sql_mode
-    sql_mode = comboxlist.get()
-    print(sql_mode)  # 打印选中的值
-    return sql_mode
+# def go(*args):  # 处理事件，*args表示可变参数
+#     global sql_mode
+#     sql_mode = comboxlist.get()
+#     print(sql_mode)  # 打印选中的值
+#     return sql_mode
+#
 
-
-frame3 = tk.Frame(GUI)
-frame3.grid(row=3, column=0, sticky='w')
-
-lb3 = tk.Label(frame3, text='请选模式和时间:')
-lb3.pack(side='left')
-comboxlist = ttk.Combobox(frame3)  # 初始化
-comboxlist["values"] = ("1. 班长完课率", "2. 班级完课率", "3. 你最帅", "4. 你真菜")
-comboxlist.current(0)  # 选择第一个
-comboxlist.bind('<<ComboboxSelected>>', go)  # 绑定事件,(下拉列表框被选中时，绑定go()函数)
-# sql_mode = comboxlist.get()
-comboxlist.pack()
+# frame3 = tk.Frame(GUI)
+# frame3.grid(row=3, column=0, sticky='w')
+#
+# lb3 = tk.Label(frame3, text='请选模式和时间:')
+# lb3.pack(side='left')
+# comboxlist = ttk.Combobox(frame3)  # 初始化
+# comboxlist["values"] = ("1. 班长完课率", "2. 班级完课率", "3. 你最帅", "4. 你真菜")
+# comboxlist.current(0)  # 选择第一个
+# comboxlist.bind('<<ComboboxSelected>>', go)  # 绑定事件,(下拉列表框被选中时，绑定go()函数)
+# # sql_mode = comboxlist.get()
+# comboxlist.pack()
 
 frame4 = tk.Frame(GUI)
 frame4.grid(row=4, column=0, sticky='w')
@@ -88,23 +90,31 @@ entry4_2.pack(side='left')
 
 
 def run_stat():
+    lb5.config(text="正在执行...")
+
     print('sql select data.========')
     print(input_file)
     print(output_file)
-    sql_mode = comboxlist.get()
-    print(sql_mode)
     begin_date = entry4_1.get()
     end_date = entry4_2.get()
     print(begin_date, end_date)
-    with open(output_file, mode='w') as outfile:
-        con = [input_file, sql_mode, begin_date, end_date]
-        outfile.writelines('\n'.join(con))
 
+    uploadexcel(input_file)
+    load2excel(output_file,begin_date,end_date)
+    lb5.config(text="运行结束,文件输出在:")
+    var5 = tk.StringVar()  # 这即是输入框中的内容
+    var5.set(output_file)  # 通过var.get()/var.set() 来 获取/设置var的值
+    entry5_1 = tk.Entry(frame5, width=30, textvariable=var5)
+    entry5_1.pack(side='left')
 
 frame5 = tk.Frame(GUI)
 frame5.grid(row=5, column=0, sticky='w')
 
+
 btn5 = tk.Button(frame5, text="执行查询", command=run_stat)
 btn5.pack(side='left')
-
+lb5 = tk.Label(frame5, text='xx')
+lb5.pack(side='left')
 GUI.mainloop()
+
+
