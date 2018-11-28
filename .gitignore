@@ -4,7 +4,9 @@ trec06c/
 kmeansdemo/
 
 .idea
-
+conf
+conf*
+*conf
 odpsInit.py
 
 # Python:
